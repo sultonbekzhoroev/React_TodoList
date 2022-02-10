@@ -7,3 +7,6 @@
   display: flex;
   justify-content: space-between;
 }
+.task-list.complete {
+  color: red;
+}
