@@ -16,30 +16,36 @@
 }
 
 .fa-star.almost {
-  color: yellow;
+  color: green;
 }
 
 .btn-son1 {
-  background-color: #2ab7ca;
+  background-color: #fff;
   border-radius: 5px;
+  color: green;
 }
 
 .btn-son2 {
-  background-color: #851e3e;
+  background-color: #fff;
   border-radius: 5px;
+  color: pink;
 }
 
 .btn-son3 {
-  background-color: #adcbe3;
+  background-color: #fff;
   border-radius: 5px;
+  color: red;
 }
 .btn-son1:hover {
   background-color: #3d5a80;
+  color: #fff;
 }
 .btn-son2:hover {
   background-color: #3d5a80;
+  color: #fff;
 }
 
 .btn-son3:hover {
   background-color: #3d5a80;
+  color: #fff;
 }
