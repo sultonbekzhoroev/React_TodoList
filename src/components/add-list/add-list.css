@@ -18,3 +18,28 @@
 .fa-star.almost {
   color: yellow;
 }
+
+.btn-son1 {
+  background-color: #2ab7ca;
+  border-radius: 5px;
+}
+
+.btn-son2 {
+  background-color: #851e3e;
+  border-radius: 5px;
+}
+
+.btn-son3 {
+  background-color: #adcbe3;
+  border-radius: 5px;
+}
+.btn-son1:hover {
+  background-color: #3d5a80;
+}
+.btn-son2:hover {
+  background-color: #3d5a80;
+}
+
+.btn-son3:hover {
+  background-color: #3d5a80;
+}

@@ -41,16 +41,20 @@ class AddList extends Component {
         <div>
           <button
             type="button"
-            className="btn-check btn-sm"
+            className="btn-check btn-sm btn-son1"
             onClick={this.onComplete}
           >
             <i class="bi bi-check-lg">С</i>
           </button>
-          <button type="button" className="btn-cookie btn-sm">
+          <button type="button" className="btn-cookie btn-sm btn-son2">
             <i className="fas fa-edit"></i>
           </button>
 
-          <button type="button" className="btn-trash btn-sm" onClick={onDelete}>
+          <button
+            type="button"
+            className="btn-trash btn-sm btn-son3"
+            onClick={onDelete}
+          >
             <i className="fas fa-trash"></i>
           </button>
           <i className={classes}></i>

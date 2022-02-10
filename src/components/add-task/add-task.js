@@ -38,7 +38,9 @@ class AddTask extends Component {
             value={taskName}
             onChange={this.onValueChange}
           />
-          <button type="submit">Add</button>
+          <button type="submit" className="add-btn">
+            Add
+          </button>
         </form>
       </div>
     );
