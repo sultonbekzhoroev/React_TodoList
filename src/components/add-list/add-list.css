@@ -6,7 +6,15 @@
   list-style: none;
   display: flex;
   justify-content: space-between;
+  font-size: 25px;
 }
 .task-list.complete {
   color: red;
+}
+.fa-star {
+  color: white;
+}
+
+.fa-star.almost {
+  color: yellow;
 }

@@ -4,16 +4,48 @@ import "./add-list.css";
 class AddList extends Component {
   constructor(props) {
     super(props);
+    this.state = {
+      complete: false,
+      almost: false,
+    };
   }
+
+  onComplete = () => {
+    this.setState(({ complete }) => ({
+      complete: !complete,
+    }));
+  };
+
+  onAlmost = () => {
+    this.setState(({ almost }) => ({
+      almost: !almost,
+    }));
+  };
 
   render() {
     const { taskName, onDelete } = this.props;
+    const { complete, almost } = this.state;
+    let classNames = "task-list";
+    let classes = "fas fa-star";
+    if (complete) {
+      classNames += " complete";
+    }
+    if (almost) {
+      classes += " almost";
+    }
     return (
-      <li className="task-list">
+      <li className={classNames}>
         <div>
-          <span>{taskName}</span>
+          <span onClick={this.onAlmost}>{taskName}</span>
         </div>
-        <div className="d-flex justify-content-center align-items-center">
+        <div>
+          <button
+            type="button"
+            className="btn-check btn-sm"
+            onClick={this.onComplete}
+          >
+            <i class="bi bi-check-lg">С</i>
+          </button>
           <button type="button" className="btn-cookie btn-sm">
             <i className="fas fa-edit"></i>
           </button>
@@ -21,6 +53,7 @@ class AddList extends Component {
           <button type="button" className="btn-trash btn-sm" onClick={onDelete}>
             <i className="fas fa-trash"></i>
           </button>
+          <i className={classes}></i>
         </div>
       </li>
     );
